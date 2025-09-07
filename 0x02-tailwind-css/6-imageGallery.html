@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+      <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+      <section class="lg:col-span-2 flex">
+        <div class="p-4 bg-red-200 w-1/2">Flexbox Item 1</div>
+        <div class="p-4 bg-red-400 w-1/2">Flexbox Item 2</div>
+      </section>
+      <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+
+    <section class="mt-8">
+      <h2 class="text-2xl font-semibold mb-4">Image Gallery</h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <figure class="rounded-lg overflow-hidden bg-gray-100">
+          <img
+            src="https://picsum.photos/id/1015/800/600"
+            alt="Mountain landscape"
+            class="w-full h-64 object-cover"
+          />
+          <figcaption class="p-3 text-sm text-gray-700 bg-white">
+            Mountain landscape
+          </figcaption>
+        </figure>
+
+        <figure class="rounded-lg overflow-hidden bg-gray-100">
+          <img
+            src="https://picsum.photos/id/1025/800/600"
+            alt="Majestic eagle"
+            class="w-full h-64 object-cover"
+          />
+          <figcaption class="p-3 text-sm text-gray-700 bg-white">
+            Majestic eagle
+          </figcaption>
+        </figure>
+
+        <figure class="rounded-lg overflow-hidden bg-gray-100">
+          <img
+            src="https://picsum.photos/id/1043/800/600"
+            alt="Forest waterfall"
+            class="w-full h-64 object-cover"
+          />
+          <figcaption class="p-3 text-sm text-gray-700 bg-white">
+            Forest waterfall
+          </figcaption>
+        </figure>
+
+        <figure class="rounded-lg overflow-hidden bg-gray-100">
+          <img
+            src="https://picsum.photos/id/1035/800/600"
+            alt="Desert dunes"
+            class="w-full h-64 object-cover"
+          />
+          <figcaption class="p-3 text-sm text-gray-700 bg-white">
+            Desert dunes
+          </figcaption>
+        </figure>
+
+        <figure class="rounded-lg overflow-hidden bg-gray-100">
+          <img
+            src="https://picsum.photos/id/1056/800/600"
+            alt="City skyline at dusk"
+            class="w-full h-64 object-cover"
+          />
+          <figcaption class="p-3 text-sm text-gray-700 bg-white">
+            City skyline at dusk
+          </figcaption>
+        </figure>
+
+        <figure class="rounded-lg overflow-hidden bg-gray-100">
+          <img
+            src="https://picsum.photos/id/1069/800/600"
+            alt="Ocean cliffs"
+            class="w-full h-64 object-cover"
+          />
+          <figcaption class="p-3 text-sm text-gray-700 bg-white">
+            Ocean cliffs
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+      <p>&copy; 2024 John Doe's Blog</p>
+    </footer>
+  </body>
+</html>

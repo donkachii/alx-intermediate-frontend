@@ -1,0 +1,4 @@
+# Steps taken to install SASS
+
+- I made sure I had NPM installed
+- I use the npm command npm install sass -v 3.7.4
